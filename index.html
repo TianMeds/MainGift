@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Title Animation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="sp-container">
+	<div class="sp-content">
+		<div class="sp-globe"></div>
+		<h2 class="frame-1">'Hello there my Love, Happy 19th Birthday to you </h2>
+		<h2 class="frame-2">This is the gift that i create for you and i can give to you</h2>
+		<h2 class="frame-3">Hope you like it my love thank you for supporting me always</h2>
+		<h2 class="frame-4">I know that I messed up always but I promise, I</h2>
+		<h2 class="frame-6">ohh...</h2>
+		<h2 class="frame-5">
+			<span>I</span>
+			<span>can</span>
+			<span>Make</span>
+			<span>it</span>
+			<span>right</span>
+		</h2>
+		<a class="sp-circle-link" href="https://tianmeds.github.io/Gift/">alright</a>
+	</div>
+</div>
+
+<div class='snowsand'>
+<canvas class='snowball' id='snowball'></canvas>
+</div>
+<script type='text/javascript'>
+!function(){function t(t){var n=t.getContext("2d"),e=0,i=0,o=[],d=function(){this.x=this.y=this.dx=this.dy=0,this.reset()};function a(){e=window.innerWidth,i=window.innerHeight,t.width=e,t.height=i,function(t){if(t!=o.length){o=[];for(var n=0;n<t;n++)o.push(new d)}}(e*i/1e4)}d.prototype.reset=function(){this.y=Math.random()*i,this.x=Math.random()*e,this.dx=1*Math.random()-.5,this.dy=.5*Math.random()+.5},a(),function t(){n.clearRect(0,0,e,i),n.fillStyle="rgba(255,255,255,.3)",o.forEach(function(t){t.y+=t.dy,t.x+=t.dx,t.y>i&&(t.y=0),t.x>e&&(t.reset(),t.y=0),n.beginPath(),n.arc(t.x,t.y,5,0,2*Math.PI,!1),n.fill()}),window.requestAnimationFrame(t)}(),window.addEventListener("resize",a)}var n;n=function(){t(document.getElementById("snowball"))},"loading"!=document.readyState?n():document.addEventListener("DOMContentLoaded",n)}();
+</script>
+<!-- partial -->
+  
+</body>
+</html>
